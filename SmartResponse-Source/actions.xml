@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="SIEM Speak" Version="1" Guid="b2df04de-9add-4b5c-8845-d528c201f3a4">
+
+<!-- Whatcha wanna say?! -->
+  <remv1:Action Name="Say Something" Command="C:\Windows\System32\WindowsPowershell\v1.0\powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file say_srp.ps1" Order="1" />
+    <remv1:StringParameter Name="What to say?" Switch="-what " Order="2" />
+  </remv1:Action>
+
+</remv1:Remediation-Plugin>
